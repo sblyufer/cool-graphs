@@ -1,0 +1,24 @@
+# datasets and run outputs
+data/*
+!data/.gitkeep
+results/
+*.pkl
+*.npz
+*.ckpt
+lightning_logs/
+
+# python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# editors / os
+.vscode/
+.idea/
+.DS_Store

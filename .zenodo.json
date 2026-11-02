@@ -1,0 +1,28 @@
+{
+  "title": "Cool Graphs: Active Property Search Towards Quantum Nano-Refrigerators (code)",
+  "description": "Code for the NeurIPS 2026 paper \"Cool Graphs: Active Property Search Towards Quantum Nano-Refrigerators\": the Born-Markov master-equation oracle, the graph variational autoencoder, the active-learning loop and the random and GP-BO baselines.",
+  "upload_type": "software",
+  "license": "MIT",
+  "creators": [
+    {
+      "name": "Blyufer, Sofia",
+      "affiliation": "Schulich Faculty of Chemistry, Technion - Israel Institute of Technology"
+    },
+    {
+      "name": "Kleiner, Amir",
+      "affiliation": "Weizmann Institute of Science"
+    },
+    {
+      "name": "Peskin, Uri",
+      "affiliation": "Schulich Faculty of Chemistry and Helen Diller Quantum Center, Technion - Israel Institute of Technology"
+    }
+  ],
+  "keywords": [
+    "active learning",
+    "graph neural networks",
+    "variational autoencoder",
+    "quantum thermodynamics",
+    "nano-refrigerators"
+  ],
+  "related_identifiers": []
+}

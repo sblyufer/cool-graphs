@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "coolgraphs"
+version = "1.0.0"
+description = "Graph VAE + active learning for discovering quantum nano-refrigerator configurations"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "Sofia Blyufer" },
+  { name = "Amir Kleiner" },
+  { name = "Uri Peskin" },
+]
+dependencies = [
+  "numpy",
+  "scipy",
+  "scikit-learn",
+  "tqdm",
+  "torch>=2.0",
+  "torch-geometric>=2.3",
+  "pytorch-lightning>=2.0",
+  "torchmetrics",
+]
+
+[project.optional-dependencies]
+search = ["optuna>=3.0"]
+plots = ["matplotlib"]
+dev = ["pytest"]
+all = ["optuna>=3.0", "matplotlib", "pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "tests"]

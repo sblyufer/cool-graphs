@@ -1,0 +1,21 @@
+{
+  "description": "GVAE configuration used for every model and active-learning run in the paper (selected by scripts/hp_search.py on validation PR-AUC).",
+  "params": {
+    "lr": 0.0009479472865745162,
+    "hidden_dim": 128,
+    "latent_dim": 32,
+    "batch_size": 128,
+    "beta_recon": 2.6739296064152267,
+    "beta_kl": 0.005901821425589314,
+    "beta_pred": 65.84190118492825
+  },
+  "fixed": {
+    "encoder": "GAT, 2 message-passing layers, 2 heads / 1 head",
+    "pooling": "attention",
+    "mc_dropout_rate": 0.2,
+    "stage0_epochs": 30,
+    "max_epochs": 400,
+    "early_stopping_patience": 40,
+    "split_seed": 42
+  }
+}
